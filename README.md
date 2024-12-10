@@ -240,4 +240,10 @@ function impureFunction() {
 
 // Curried Function
 function curriedFunction(a) {
-    return function (b
+    return function (b) {
+        return a + b;
+    };
+}
+const addFive = curriedFunction(5);
+console.log(addFive(3)); // 8
+
